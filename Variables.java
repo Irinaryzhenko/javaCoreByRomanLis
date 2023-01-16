@@ -1,8 +1,4 @@
-import com.sun.source.util.SourcePositions;
-
-import java.sql.SQLOutput;
-
-public class Lesson2 {
+public class Variables {
     public static void main(String[] args){
         boolean bTrue = true;
         boolean bFalse = false;
