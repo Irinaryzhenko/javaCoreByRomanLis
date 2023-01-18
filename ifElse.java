@@ -10,20 +10,20 @@ public class ifElse {
         }
 
 
-         double digit = 10;
+        double digit = 10;
 
         if (digit <= 0) {
             System.out.println("Меньше либо равно 0");
         } else if (digit > 0 && digit <= 10) { // первая часть условия - излишняя проверка
             System.out.println(">0 И < 10");
-        } else if (digit >10 && digit <= 1000) {
+        } else if (digit > 10 && digit <= 1000) {
             System.out.println("> 10 и < 1000");
         } else if (digit > 1000) {   // можно убрать if и условие для последнего else
             System.out.println("Число больше 1000");
         }
 
 
-        int weekDay= 7;
+        int weekDay = 7;
 
         if (weekDay == 1) {
             System.out.println("Monday");
@@ -37,7 +37,7 @@ public class ifElse {
             System.out.println("Пятница");
         } else if (weekDay == 6) {
             System.out.println("Суббота");
-        } else if (weekDay == 7){
+        } else if (weekDay == 7) {
             System.out.println("Воскресенье");
         } else {
             System.out.println("Несуществующий день");
@@ -45,24 +45,24 @@ public class ifElse {
 
 
         switch (weekDay) {
-            case 1 :
+            case 1:
                 System.out.println("Понедельник");
                 break;
 
-            case 2 :
+            case 2:
                 System.out.println("Вторник");
                 break;
-            case 3 :
+            case 3:
                 System.out.println("Среда");
                 break;
-            case 4 :
+            case 4:
                 System.out.println("Четверг");
                 break;
-            case 5 :
+            case 5:
                 System.out.println("Пятница");
                 break;
-            case 6 :
-            case 7 :
+            case 6:
+            case 7:
                 System.out.println("Выходной");
                 break;
 
@@ -72,23 +72,23 @@ public class ifElse {
 
         int monthDay = 7;
         switch (monthDay) {
-            case 1 : // кейсы можно через запятую на 17 java
-            case 2 :
-            case 12 :
+            case 1: // кейсы можно через запятую на 17 java
+            case 2:
+            case 12:
                 System.out.println("Зима");
                 break;
-            case 3 :
-            case 4 :
-            case 5 :
+            case 3:
+            case 4:
+            case 5:
                 System.out.println("Весна");
                 break;
-            case 6 :
-            case 7 :
-            case 8 :
+            case 6:
+            case 7:
+            case 8:
 
                 System.out.println("Лето");
-                        break;
-            case 9 :
+                break;
+            case 9:
             case 10:
             case 11:
                 System.out.println("Осень");
@@ -99,9 +99,8 @@ public class ifElse {
         }
 
 
-
-
-
     }
 }
+
+
 
