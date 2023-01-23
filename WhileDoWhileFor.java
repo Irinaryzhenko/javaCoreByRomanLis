@@ -16,5 +16,12 @@ public class WhileDoWhileFor {
             System.out.println("Count is: " + f);
         }
 
+        //бесконечный цикл
+
+        for (;;) {
+            System.out.println("Hello");
+        }
+
+
     }
 }
