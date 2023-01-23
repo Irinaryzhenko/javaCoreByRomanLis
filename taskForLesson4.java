@@ -1,6 +1,4 @@
-import java.sql.SQLOutput;
-
-public class lesson4 {
+public class taskForLesson4 {
     public static void main (String[] args){
         int X = 10;
         int Y = 2;
