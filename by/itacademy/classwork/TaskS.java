@@ -1,3 +1,5 @@
+package by.itacademy.classwork;
+
 public class TaskS {
     public static void main (String[] args) {
 

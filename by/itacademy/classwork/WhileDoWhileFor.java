@@ -1,3 +1,5 @@
+package by.itacademy.classwork;
+
 public class WhileDoWhileFor {
     public static void main (String[] args){
         int i = 1;

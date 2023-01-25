@@ -1,3 +1,5 @@
+package by.itacademy.classwork;
+
 public class Variables {
     public static void main(String[] args){
         boolean bTrue = true;
