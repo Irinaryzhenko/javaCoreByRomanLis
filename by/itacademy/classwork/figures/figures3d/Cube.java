@@ -1,8 +1,10 @@
 package by.itacademy.classwork.figures.figures3d;
 
-public class Cub extends Cuboid {
-    public Cub(int a) {
+public class Cube extends Cuboid {
+    public Cube(int a) {
         super(a, a, a);
+
+
 
     }
 }
