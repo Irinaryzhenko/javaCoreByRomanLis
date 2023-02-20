@@ -22,28 +22,33 @@ public class Main4 {
         boxes1.add(three);
         System.out.println(boxes);
 
+        BoxComparator comparator = new BoxComparator();
+        Set<Box2> boxes2 = new TreeSet<>(comparator);
+        boxes.add(one);
+        boxes.add(two);
+        boxes.add(three);
+        System.out.println(boxes2);
 
+        Iterator<Box> boxIterator = boxes.iterator();
+        while (boxIterator.hasNext()) {
+            Box box = boxIterator.next();
+            if (box.equals(one)) {
+                boxIterator.remove();
+            }
+        }
+        System.out.println(boxes);
 
-//        Iterator<Box> boxIterator = boxes.iterator();
-//        while (boxIterator.hasNext()) {
-//            Box box = boxIterator.next();
-//            if (box.equals(one)) {
-//                boxIterator.remove();
-//            }
-//        }
-//        System.out.println(boxes);
-//
-//        List<Integer> ints = new ArrayList<>();
-//        ListIterator<Integer> iterator = ints.listIterator();
-//
-//        for (Box box : boxes) {
-//            System.out.println(boxes);
-//        }
-//        Set<Integer> strings = new TreeSet<>();
-//        ints.add(2);
-//        ints.add(4);
-//        ints.add(5);
-//        System.out.println();
+        List<Integer> ints = new ArrayList<>();
+        ListIterator<Integer> iterator = ints.listIterator();
+
+        for (Box box : boxes) {
+            System.out.println(boxes);
+        }
+        Set<Integer> strings = new TreeSet<>();
+        ints.add(2);
+        ints.add(4);
+        ints.add(5);
+        System.out.println();
 
     }
 }
