@@ -1,29 +1,31 @@
-package by.itacademy.classwork.collections;
+package by.itacademy.classwork.collections.Map;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Box implements Comparable<Box>, Serializable {
+public class BoxModified implements Comparable<BoxModified>, Serializable {
     private final int x;
     private final int y;
     private final int z;
+    private final int weight;
 
-
-    public Box(int x, int y, int z) {
+    public BoxModified(int x, int y, int z, int weight) {
         this.x = x;
         this.y = y;
         this.z = z;
-
+        this.weight = weight;
 
     }
     public int volume() {
 
         return  this.x * this.y * this.z;
     }
-
+    public int getWeight() {
+        return weight;
+    }
 
     @Override
-    public int compareTo(Box o) {
+    public int compareTo(BoxModified o) {
         return Integer.compare(this.volume(), o.volume());
     }
 
@@ -32,10 +34,10 @@ public class Box implements Comparable<Box>, Serializable {
         if (o == null) {
             return false;
         }
-        if (! (o instanceof Box)) {
+        if (! (o instanceof BoxModified)) {
             return false;
         }
-        Box box = (Box) o;
+        BoxModified box = (BoxModified) o;
         return this.x == box.x
                 && this.y == box.y
                 && this.z == box.z;
@@ -52,7 +54,8 @@ public class Box implements Comparable<Box>, Serializable {
                 "x=" + x +
                 ", y=" + y +
                 ", z=" + z +
-                         '}';
+                ", weight=" + weight +
+                '}';
     }
 }
 

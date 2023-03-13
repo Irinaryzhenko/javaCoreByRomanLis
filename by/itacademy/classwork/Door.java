@@ -8,4 +8,7 @@ public class Door {
     Door () {
 
     }
+    int volume() {
+        return x * y * z;
+    }
 }
