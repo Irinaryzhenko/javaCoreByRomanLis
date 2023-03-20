@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class ProdCons {
 
-    private static final Integer LIMIT = 1;
+    private static final Integer LIMIT = 5;
     private static final LinkedList<Integer> BUFFER = new LinkedList<>();
     private static volatile boolean consumer = true;
     private static volatile boolean producer = true;
@@ -59,5 +59,4 @@ public class ProdCons {
         producer.join();
         consumer.join();
     }
-
 }
