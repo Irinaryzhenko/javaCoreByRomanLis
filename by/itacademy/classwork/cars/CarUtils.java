@@ -15,8 +15,8 @@ public class CarUtils {
             String name = " " + i;
             int engineCapacity = RANDOM.nextInt(3) + 1;
 
-            CarModel model = CarModel.values()[RANDOM.nextInt(3)];
-            Car car = new Car(model, name, engineCapacity);
+            Model model = Model.values()[RANDOM.nextInt(3)];
+            Car car = new Car(name, engineCapacity,model);
             cars.add(car);
         }
             return cars;
@@ -25,10 +25,10 @@ public class CarUtils {
     public static Map<Integer, List<Car>> groupByEngineCapacity(List<Car> cars) {
         Map<Integer, List<Car>> result = new HashMap<>();
         for (Car car : cars) {
-            List<Car> fromMap = result.get(car.getEngineCapacity());
+            List<Car> fromMap = result.get(car.getENGINECAPACITY());
             if (fromMap == null) {
                 fromMap = new ArrayList<>();
-                result.put(car.getEngineCapacity(), fromMap);
+                result.put(car.getENGINECAPACITY(), fromMap);
             }
             fromMap.add(car);
         }

@@ -1,6 +1,6 @@
 package by.itacademy.classwork.cars;
 
-public enum CarModel {
+public enum Model {
     BMW,
     Audi,
     KIA,
